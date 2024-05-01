@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+:root{
+    --platinum: #00FDDC;
+    --dark-purple: #006E90; 
+    --rosewood: #03045E; 
+    --light-rosewood: #9BBDF9; 
+    --davys-gray: #1A1F16; 
+    --battleship-gray: #808F85;
+    --night: #00120B; 
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    height:8vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-purple);
+    color: var(--platinum);
+    text-shadow: var(--platinum) 0px 0px 4px, var(--platinum) 0px 0px 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-logo{
+    height:7vh;
+    margin-left:1vmin;
+}
+
+.nav-link{
+    margin-right:1vmin;
+    text-decoration: none;
+    color: var(--platinum);
+    font-size:3vmin;
+    font-family: Righteous;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    text-shadow: var(--platinum) 0px 0px 5px, var(--platinum) 0px 0px 5px;
+    scale: 0.98;
+}
+
+
+.nav-title{
+    font-size: 4.5vmin;
+    font-family: Anta;
+}
+
+.body-content{
+    width:100%;
+    height:fit-content; 
+    min-height: 92vh;
+    background: linear-gradient(0.25turn, var(--rosewood), var(--light-rosewood), var(--rosewood)); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: var(--night);
+    height:fit-content;
+    min-height:20vh; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-link{
+    color: var(--battleship-gray); 
+    font-size:2vmin;
+    text-decoration: none;
+}
+
+.github-link:hover{
+    text-decoration: underline;
+    scale: 0.98; 
+}
+
+.github-logo{
+    vertical-align: middle;
+    width: 3vmin;
+    filter: brightness(200%);
+    padding-right:1vmin;
+}
+
+.music-grid{
+    width:60%;
+    height:60vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    background-color: var(--platinum);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+}
+
+.image-box{
+    width: 100%;
+    height:100%;
+    max-height: 60vh;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.music-info-box{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.music-image{
+    width: 45vmin;
+    height: 45vmin;
+    transition: .05s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.song-name{
+    font-size:8.5vmin;
+    color: var(--dark-purple);
+    text-align: center;
+    line-height: 80%;
+    margin-bottom: 2vmin;
+    font-family: Orbitron; 
+}
+
+.artist-name{
+    font-size:3vmin;
+    text-align: center;
+    color: var(--dark-purple);
+    font-family: Orbitron; 
+}
+
+.song-link{
+    font-size: 3vmin;
+    color:var(--dark-purple);
+    text-decoration: none;
+}
+
+.song-link:hover{
+    text-decoration: underline;
+    scale: 0.98;
+}
+
+.lyric{
+    font-size: 4vmin;
+    text-align: center;
+    color: #006E90;
+    margin-top: 2vmin;
+    font-family: Righteous;
+}
+
+.music-image:hover{
+    filter: brightness(50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.music-supp-text{
+    font-size: 4vmin;
+    text-align: center;
+    color: #00120B;
+    font-family: Righteous;
+}
+
+.album{
+    color: #00120B;
+    font-size: 5vmin;
+    text-align: center;
+    font-family: Orbitron;
+}
+
+.play-button{
+    width: 40vmin;
+    height: 40vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+}
